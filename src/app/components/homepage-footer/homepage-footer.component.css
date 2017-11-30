@@ -1,0 +1,32 @@
+.footerCont {
+    width: 100%;
+    height: 450px;
+    margin: -50px 0 0 0;
+    clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
+    color: #edf2f4;
+}
+
+.footerCont :nth-child(1) {
+    margin: 35px 0 0 0;
+}
+
+.footerCont :nth-child(2) {
+    text-transform: uppercase;
+    margin: 15px 0 0 0;
+    font-size: 1.5em;
+}
+
+.footerCont :nth-child(3) {
+    color: #90929c;
+    margin: 50px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .footerCont :nth-child(2) {
+        font-size: 2.2em;
+    }
+    .footerCont :nth-child(3) {
+        font-size: 1.8em;
+        text-align: center;
+    }
+}

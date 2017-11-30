@@ -1,0 +1,33 @@
+<div class="headerCont f f-hor-cent f-col">
+  <div class="headerMenu f f-cent text-dark">
+    <div>Work</div>
+    <div>Customer</div>
+    <div class="f f-col f-cent">
+        <img class="headerMenuImg" src="/assets/images/logo_small.png">
+        <div class="headerMenuImgTxt">EXPLORE</div>
+    </div>
+    <div>About</div>
+    <div>Connect</div>
+    <div (click)="toggleMenu('open')" class="mobileBars"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </div>
+  <div class="mobileMenu background-blue" id="mobileMenu">
+    <div (click)="toggleMenu('close')" class="mobileBarsClose"><i class="fa fa-times" aria-hidden="true"></i></div>
+    <div>Work</div>
+    <div>Customer</div>
+    <div>About</div>
+    <div>Connect</div>
+  </div>
+  <div class="headerContent f f-hor-right text-dark">
+    <div class="headerContRight f f-col f-cent">
+        <div>Into a new adventure</div>
+        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>    
+        <div class="headerArrowsCont f f-hor-right">
+          <img class="headerArrows" src="/assets/images/arrow_down.png">
+          <img class="headerArrows" src="/assets/images/arrow_right.png">          
+        </div>
+      </div>
+  </div>
+  <div class="headerLayer0" (window:resize)="onResize($event)" [style.background-position]="headerPosition"></div>
+  <canvas class="headerLayer1" id="headerCanvas"></canvas>
+  <div class="headerLayer2" (window:resize)="onResize($event)" [style.background-position]="headerPosition"></div>
+</div>

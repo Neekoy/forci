@@ -1,0 +1,121 @@
+.cardsCont {
+    justify-content: space-around;
+    margin: 0 0 150px 0;
+}
+
+.cardFlow {
+    flex-direction: row;
+}
+
+.cardsCont > :nth-child(1) {
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    padding: 80px 0 60px 0;
+}
+
+.cardsRedline {
+    width: 50px;
+    height: 3px;
+}
+
+.cardInstance {
+    width: 440px;
+    padding: 30px;
+}
+
+.cardInstance > div {
+    margin: 20px 0;
+}
+
+.cardInstance > :nth-child(2) {
+    margin: 35px 0 0 0;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.cardInstance > img {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+    .headerContRight {
+        margin: 0 100px 0 0;
+    }
+    .cardInstance {
+        width: auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .cardFlow {
+        flex-direction: column;
+    }
+}
+
+.cardImgCont {
+    position: relative;
+    cursor: pointer;
+}
+
+.cardImgOverlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(217, 4, 41, 0.6);
+    width: 100%;
+    height: 98%;
+}
+
+.cardImgPlus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    display: none;
+}
+
+.cardsButton {
+    color: white;
+    padding: 10px 35px 10px 35px;
+    width: 200px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.cardsButton > img {
+    height: 40px;
+    width: 40px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .cardsCont > :nth-child(1) {
+        font-size: 3em;
+    }
+    .cardImgCont {
+        width: 100%;
+    }
+    .cardImgCont > img {
+        width: 100%;
+    }
+    .cardInstance > :nth-child(2) {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .cardInstance > :nth-child(4) {
+        font-size: 2.2em;
+    }
+    .cardsButton {
+        width: 400px;
+        padding: 15px 45px 15px 45px;
+        font-size: 2em;
+        height: 60px;
+        margin: 100px 0 0 0;
+    }
+}

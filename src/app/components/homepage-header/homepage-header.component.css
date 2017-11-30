@@ -1,0 +1,173 @@
+.headerCont {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background: grey;
+}
+
+/* TOP MENU */
+
+.headerMenu {
+    width: 100%;
+    height: 80px;
+    margin: 15px 0 0 0;
+    z-index: 3;
+}
+
+.headerMenu > div {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 25px 0 25px 0;
+}
+
+.headerMenu > div:hover:not(:nth-child(3)) {
+    background: grey;
+    color: white;
+    cursor: pointer;
+}
+
+.headerMenuImg {
+    height: 35px;
+    width: 35px;
+    margin: 0 0 5px 0;
+}
+
+.headerMenuImgTxt {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* HEADER LAYERS */
+
+.headerLayer0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    background-image: url("/assets/images/header-background.png");        
+    background-size: cover;
+    z-index: 0;
+}
+
+.headerLayer1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    z-index: 1;
+}
+
+.headerLayer2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    background-image: url("/assets/images/header-person-default.png");
+    background-size: cover;
+    z-index: 2;
+}
+
+/* HEADER CONTENT */
+
+.headerContent {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.headerContRight {
+    width: 360px;
+    text-align: right;
+    margin: 0 260px 0 0;
+}
+
+.headerContRight > :nth-child(1) {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 0 0 70px 0;
+}
+
+.headerContRight > :nth-child(2) {
+    font-size: 1.2em;
+}
+
+.headerContRight > :last-child {
+    margin: 50px 0 0 0;
+    width: 100%;
+}
+
+.headerArrows {
+    height: 45px;
+    width: 45px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.mobileBars {
+    display: none !important;
+}
+
+.mobileBarsClose {
+    display: none;
+    height: 120px !important;
+    justify-content: flex-end !important;
+    margin: 9px 55px 0 0;
+    font-size: 1.6em;
+}
+
+.mobileMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    font-size: 3em;
+    color: white;
+}
+
+.mobileMenu > div {
+    height: 100px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .headerContRight {
+        margin: 0 100px 0 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .headerMenuImgTxt {
+    }
+    .headerMenu > div:not(:nth-child(3)):not(:nth-child(6)) {
+        display: none;
+    }
+    .headerMenu > div:nth-child(3) {
+        margin-top: 50px;
+        font-size: 1.3em;
+    }
+    .headerContRight {
+        font-size: 1.3em;
+        margin: 0 50px 0 0;
+    }
+    .headerContRight > :nth-child(2) {
+        display: none;
+    }
+    .mobileBars {
+        display: flex !important;
+        position: absolute;
+        top: 16px;
+        right: 10px;
+        font-size: 4em;
+    }
+}

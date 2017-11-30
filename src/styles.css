@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global CSS */
+
+.f {
+    display: flex;
+}
+
+.f-cent {
+    justify-content: center;
+    align-items: center;
+}
+
+.f-hor-cent {
+    justify-content: center;
+}
+
+.f-hor-right {
+    justify-content: flex-end;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.f-space-bet {
+    justify-content: space-between;
+}
+
+.text-dark {
+    color: #2b2d42;
+}
+
+.text-cent {
+    text-align: center;
+}
+
+.background-red {
+    background-color: #d90429;
+}
+
+.background-blue {
+    background-color: #2b2d42;
+}
+
+.background-grey {
+    background-color: #edf2f4;
+}
+
+.debug-border {
+    border: 1px solid black;
+}
+
+.width100 {
+    width: 100%;
+}
